@@ -1,6 +1,6 @@
 import streamlit as st
-from quiz import quiz_page  # Import quiz page function
-from questionnaire import configure_questionnaire  # Import questionnaire page function
+from app_pages.quiz import quiz_page  # Import quiz page function
+from app_pages.questionnaire import configure_questionnaire  # Import questionnaire page function
 
 # Sidebar for page navigation
 st.sidebar.title("Navigation")

@@ -2,11 +2,10 @@ from pydantic import BaseModel,  conlist, PydanticUserError, field_validator, mo
 
 class Question(BaseModel):
     question: str
-    options: conlist(str, min_length=4, max_length=4)  # type: ignore # Validate 2 to 4 options
+    options: conlist(str, min_length=4, max_length=4)  # type: ignore # Validate 4 options
     correct_answer: str
 
     # Validate each questionaire entry
-
     @field_validator('question', check_fields=False)
     def validate_question(cls, value):
         if not value or isinstance(int(value), int):

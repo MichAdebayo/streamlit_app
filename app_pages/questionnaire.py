@@ -19,7 +19,7 @@ def configure_questionnaire():    # sourcery skip: low-code-quality
             st.session_state["questions"] = []
 
     # Add "--" as a default option along with question numbers
-    question_numbers = ["Select question"] + list(range(1, 15))
+    question_numbers = ["Select question"] + list(range(1, 12))
     selected_question_number = st.selectbox("", question_numbers)
 
     # Load existing question data if a specific number is selected, otherwise clear
