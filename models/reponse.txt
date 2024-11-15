@@ -1,0 +1,13 @@
+1. Quelle est la limitation de l’utilisation d’un fichier plat dans l’application ?
+    - Aucune relation avec la base de données  
+    - Redondance des données
+    - Manipulation des données (ajout, suppression et modification d'anomalies)
+    - Difficulté de collaboration
+
+2. Quelle serait la prochaine étape pour faire évoluer l’application ?
+
+    - Ajouter un thème par ligue
+    - Ajouter une minuterie par question
+    - Améliorer l'esthétique de l'application (thème de couleur, apparence d'arrière-plan, etc.)
+    - Ajouter un quiz basé sur les événements en direct les plus récents
+    - Ajouter des points de motivation
