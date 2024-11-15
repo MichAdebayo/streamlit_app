@@ -1,0 +1,122 @@
+[
+  {
+    "number":1,
+    "question":"Which country won the 2023 FIFA Women's World Cup?",
+    "options":[
+      "England",
+      "USA",
+      "Australia",
+      "Spain"
+    ],
+    "correct_answer":"D"
+  },
+  {
+    "number":2,
+    "question":"Who was awarded the 2023 Ballon d'Or for men\u2019s football?",
+    "options":[
+      "Lionel Messi",
+      "Erling Haaland",
+      "Robert Lewandowski",
+      "Cristiano Ronaldo"
+    ],
+    "correct_answer":"A"
+  },
+  {
+    "number":3,
+    "question":"Which player scored the winning goal in the 2023 UEFA Champions League Final for Manchester City?",
+    "options":[
+      "Kevin De Bruyne",
+      "Erling Haaland",
+      "Ilkay Gundogan",
+      "Rodri"
+    ],
+    "correct_answer":"D"
+  },
+  {
+    "number":4,
+    "question":"Who is Manchester United's current coach?",
+    "options":[
+      "Ruud Van Nistelrooy",
+      "Erik ten Hag",
+      "Darren Fletcher",
+      "Ruben Amorim"
+    ],
+    "correct_answer":"D"
+  },
+  {
+    "number":5,
+    "question":"Who was named the Best FIFA Women's Player of 2023?",
+    "options":[
+      "Alexia Putellas",
+      "Aitana Bonmat\u00ed",
+      "Megan Rapinoe",
+      "Sam Kerr"
+    ],
+    "correct_answer":"B"
+  },
+  {
+    "number":6,
+    "question":"Which country hosted the 2023 AFC Asian Cup?",
+    "options":[
+      "Qatar",
+      "Japan",
+      "Australia",
+      "UAE"
+    ],
+    "correct_answer":"A"
+  },
+  {
+    "number":7,
+    "question":"Which manager returned to Chelsea FC as head coach in 2023?",
+    "options":[
+      "Frank Lampard",
+      "Thomas Tuchel",
+      "Mauricio Pochettino",
+      "Antonio Conte"
+    ],
+    "correct_answer":"C"
+  },
+  {
+    "number":8,
+    "question":"Which player scored his first-ever MLS goal for Inter Miami in July 2023",
+    "options":[
+      "Sergio Busquets",
+      "Lionel Messi",
+      "Jordi Alba",
+      "Neymar"
+    ],
+    "correct_answer":"B"
+  },
+  {
+    "number":9,
+    "question":"Who was the top scorer in the 2022-2023 English Premier League season?",
+    "options":[
+      "Mohamed Salah",
+      "Erling Haaland",
+      "Harry Kane",
+      "Marcus Rashford"
+    ],
+    "correct_answer":"B"
+  },
+  {
+    "number":10,
+    "question":"Which team won the 2023 Copa Libertadores?",
+    "options":[
+      "Boca Juniors",
+      "Flamengo",
+      "Fluminense",
+      "River Plate"
+    ],
+    "correct_answer":"C"
+  },
+  {
+    "question":"23",
+    "options":[
+      "A Footballer",
+      "A Dancer",
+      "A Basketballer",
+      "A Golfer"
+    ],
+    "correct_answer":"A"
+  }
+]
