@@ -72,11 +72,14 @@ To participate in the quiz:
 
 ```bash
 sportizza-quiz/
-├── questionnaire.py  # Main script to configure questions
-├── quiz.py   # Main quiz interface for users
-├── functions.py  # Helper functions to display questions
+├── app_pages/
+│   ├── questionnaire.py # Main script to configure questions
+│   └── quiz.py # Main quiz interface for users
 ├── models/
-│   └── question_model.py  # Data model with validation for questions
+│   └── question_model.py  # Data model with validation for
+├── functions.py  # Helper functions to display questions
+├── main.py   # Main quiz interface for users
+├── requirements.txt # The packages needed to run the app
 └── streamlit.json  # JSON file to store questions and answers
 ```
 
