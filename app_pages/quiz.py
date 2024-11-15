@@ -2,13 +2,32 @@ import streamlit as st
 # import time
 
 def quiz_page():
+    """
+    Displays the quiz page for the Sportizza application, allowing users to answer football-related questions. It manages the quiz state, including the current question index and user score.
+
+    This function initializes the quiz session, presents questions and options to the user, checks answers, and provides feedback. Upon completion of the quiz, it displays the user's score and offers an option to restart the quiz.
+
+    Args:
+        None
+
+    Returns:
+        None
+
+    Raises:
+        None
+
+    Examples:
+        quiz_page()
+    """
+
+    # Add header and subheader titles
     st.title("Welcome to Sportizza")
     st.subheader("Ready to test your football knowledge?")
+
     # Initialize session state if not already present
     if "current_question_index" not in st.session_state:
         st.session_state["current_question_index"] = 0
         st.session_state["score"] = 0  # Store user's score
-        #st.session_state["timer_start_time"] = time.time()  # Start timer for the first question
     
     # Get the current question index and the list of questions from session state
     current_question_index = st.session_state["current_question_index"]
@@ -41,8 +60,6 @@ def quiz_page():
             
             # Move to the next question after a short delay
             st.session_state["current_question_index"] += 1
-            # st.session_state["timer_start_time"] = time.time()  # Reset the timer for the next question
-            # time.sleep(1)  # Give a brief moment for feedback to be displayed
             st.rerun()  # Refresh the page to move to the next question
 
     else:
@@ -54,7 +71,6 @@ def quiz_page():
         if st.button("Restart Quiz"):
             st.session_state["current_question_index"] = 0
             st.session_state["score"] = 0
-            # st.session_state["timer_start_time"] = time.time()  # Reset the timer for the new quiz
             st.rerun()  # Refresh the page to restart the quiz
 
 

@@ -4,8 +4,9 @@ import os
 import streamlit as st
 from models.question_model import Question  # Import the validation function
 from pydantic import ValidationError
+from functions import preview_question
 
-def configure_questionnaire():    # sourcery skip: low-code-quality
+def configure_questionnaire() -> None:   
 
     st.title("Configure Quiz")
     st.subheader("Start designing your questionnaire")
@@ -54,6 +55,7 @@ def configure_questionnaire():    # sourcery skip: low-code-quality
             
             # Prepare data for validation
             question_data = {
+                "number": selected_question_number,
                 "question": question_input,
                 "options": options_list,
                 "correct_answer": correct_answer_input.upper()
@@ -86,12 +88,14 @@ def configure_questionnaire():    # sourcery skip: low-code-quality
 
                 st.success(f"Question {selected_question_number} saved!")
 
-                #st.rerun()
-
             except ValidationError as e:
                 # Display validation error if present
                 st.error(f"Validation Error: {e}")
 
+            st.rerun()
+
+    # Display saved questions
+    #preview_question() 
     # Display saved questions
     st.write("## Questions Preview")
     for q in st.session_state["questions"]:
