@@ -11,7 +11,6 @@ def configure_questionnaire() -> None:
     st.title("Configure Quiz")
     st.subheader("Start designing your questionnaire")
 
-    # Reload from JSON if questions are missing in session state
     if "questions" not in st.session_state or not st.session_state["questions"]:
         if os.path.exists('streamlit.json'):
             with open('streamlit.json', 'r') as file:
@@ -63,31 +62,9 @@ def configure_questionnaire() -> None:
 
             # Validate and save question
             try:
-                validated_question = Question(**question_data)
-
-                # Check if existing_question is defined
-                if 'existing_question' in locals() and existing_question:
-                    existing_question.update(validated_question.model_dump())
-                else:
-                    st.session_state["questions"].append(validated_question.model_dump())
-
-                # Save to JSON file
-                # Load existing questions if the file exists
-                try:
-                    with open('streamlit.json', 'r') as file:
-                        existing_questions = json.load(file)
-                except FileNotFoundError:
-                    existing_questions = []
-
-                # Append new question to the existing list
-                existing_questions.append(validated_question.model_dump())
-
-                # Write the updated list back to the JSON file
-                with open('streamlit.json', 'w') as file:
-                    json.dump(existing_questions, file, indent=2, separators=(",", ":"))
-
-                st.success(f"Question {selected_question_number} saved!")
-
+                validate_and_save(
+                    question_data, existing_question, selected_question_number
+                )
             except ValidationError as e:
                 # Display validation error if present
                 st.error(f"Validation Error: {e}")
@@ -96,10 +73,30 @@ def configure_questionnaire() -> None:
 
     # Display saved questions
     preview_question() 
-    # # Display saved questions
-    # st.write("## Questions Preview")
-    # for q in st.session_state["questions"]:
-    #     st.write(f"**Question {q['number']}:** {q['question']}")
-    #     for option, value in zip(["A", "B", "C", "D"], q['options']):
-    #         st.write(f"{option}. {value}")
-    #     st.write(f"Correct answer is: **{q['correct_answer']}**")  
+
+
+def validate_and_save(question_data, existing_question, selected_question_number):
+    validated_question = Question(**question_data)
+
+    # Check if existing_question is defined
+    if 'existing_question' in locals() and existing_question:
+        existing_question.update(validated_question.model_dump())
+    else:
+        st.session_state["questions"].append(validated_question.model_dump())
+
+    # Save to JSON file
+    # Load existing questions if the file exists
+    try:
+        with open('streamlit.json', 'r') as file:
+            existing_questions = json.load(file)
+    except FileNotFoundError:
+        existing_questions = []
+
+    # Append new question to the existing list
+    existing_questions.append(validated_question.model_dump())
+
+    # Write the updated list back to the JSON file
+    with open('streamlit.json', 'w') as file:
+        json.dump(existing_questions, file, indent=2, separators=(",", ":"))
+
+    st.success(f"Question {selected_question_number} saved!") 

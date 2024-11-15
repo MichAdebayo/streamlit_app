@@ -111,89 +111,12 @@
   },
   {
     "number":11,
-    "question":"who is kylain?",
-    "options":[
-      "a",
-      "c",
-      "f",
-      "h"
-    ],
-    "correct_answer":"A"
-  },
-  {
-    "number":11,
     "question":"Who is Kylian Mbappe?",
     "options":[
       "A Footballer",
       "A Dancer",
       "A Basketballer",
       "A Golfer"
-    ],
-    "correct_answer":"A"
-  },
-  {
-    "number":11,
-    "question":"Who is Kylian Mbappe?",
-    "options":[
-      "A Footballer",
-      "A Dancer",
-      "A Basketballer",
-      "A Golfer"
-    ],
-    "correct_answer":"A"
-  },
-  {
-    "number":11,
-    "question":"Who is Kylian Mbappe?",
-    "options":[
-      "Footballer",
-      "Dancer",
-      "Basketballer",
-      "Golfer"
-    ],
-    "correct_answer":"A"
-  },
-  {
-    "number":11,
-    "question":"Who is Kylian Mbappe?",
-    "options":[
-      "Footballer",
-      "Dancer",
-      "Basketballer",
-      "Golfer"
-    ],
-    "correct_answer":"A"
-  },
-  {
-    "number":11,
-    "question":"Who is Kylian Mbappe?",
-    "options":[
-      "Footballer",
-      "Dancer",
-      "Basketballer",
-      "Golfer"
-    ],
-    "correct_answer":"A"
-  },
-  {
-    "number":11,
-    "question":"Who is Kylian Mbappe?",
-    "options":[
-      "Footballer",
-      "Dancer",
-      "Basketballer",
-      "Golfer"
-    ],
-    "correct_answer":"A"
-  },
-  {
-    "number":11,
-    "question":"Who is Kylian Mbappe?",
-    "options":[
-      "Footballer",
-      "Dancer",
-      "Basketballer",
-      "Golfer"
     ],
     "correct_answer":"A"
   }
