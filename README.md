@@ -70,6 +70,17 @@ To participate in the quiz:
 
 ## File Structure
 
+```bash
+sportizza-quiz/
+├── questionnaire.py  # Main script to configure questions
+├── quiz.py   # Main quiz interface for users
+├── functions.py  # Helper functions to display questions
+├── models/
+│   └── question_model.py  # Data model with validation for questions
+└── streamlit.json  # JSON file to store questions and answers
+```
+
+
 - `questionnaire.py`: Configure quiz questions and save them.
 
 - `quiz.py`: User interface to answer questions and track scores.
