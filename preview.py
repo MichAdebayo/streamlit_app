@@ -10,13 +10,4 @@ def preview_question():
         st.write(f"Correct answer is: **{q['correct_answer']}**")
 
 
-# def launch_session_state():
-#     # Load questions from JSON if it exists and session state is empty
-#     if "questions" not in st.session_state:
-#         if os.path.exists('streamlit.json'):
-#             with open('streamlit.json', 'r') as file:
-#                 st.session_state["questions"] = json.load(file)
-#         else:
-#             st.session_state["questions"] = []
-
 
