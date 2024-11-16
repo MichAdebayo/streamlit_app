@@ -4,7 +4,7 @@ import os
 import streamlit as st
 from models.question_model import Question  # Import the validation function
 from pydantic import ValidationError
-from functions import preview_question
+from preview import preview_question
 
 def configure_questionnaire() -> None:   
 
