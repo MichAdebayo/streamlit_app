@@ -77,7 +77,7 @@ sportizza-quiz/
 │   └── quiz.py # Main quiz interface for users
 ├── models/
 │   └── question_model.py  # Data model with validation for
-├── functions.py  # Helper functions to display questions
+├── preview.py  # Helper functions to display questions
 ├── main.py   # Main quiz interface for users
 ├── requirements.txt # The packages needed to run the app
 └── streamlit.json  # JSON file to store questions and answers
@@ -88,7 +88,7 @@ sportizza-quiz/
 
 - `quiz.py`: User interface to answer questions and track scores.
 
-- `functions.py`: Provides preview functionality for saved questions.
+- `preview.py`: Provides preview functionality for saved questions.
 
 - `models/question_model.py`: Defines the question schema and validations with Pydantic.`
 
