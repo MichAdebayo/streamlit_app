@@ -1,5 +1,7 @@
 # Sportizza Quiz Application
 
+<img width="800" height="400" alt="Image" src="https://github.com/user-attachments/assets/3ae8393b-7a82-4766-805f-e845e6e5a7e8" />
+
 Welcome to the **Sportizza Quiz Application**! This project is a configurable and interactive football-themed quiz built with Streamlit. Users can design quizzes, answer football-related questions, track their scores, and receive feedback. The application leverages Pydantic for data validation to ensure that all questions follow the required format.
 
 ## Table of Contents
