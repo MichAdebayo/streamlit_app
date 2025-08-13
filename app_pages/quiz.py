@@ -20,7 +20,7 @@ def quiz_page():
         None
     """
     st.title("🏆 Sportizza Quiz Challenge")
-    st.subheader("Ready to prove your football expertise?")
+    st.subheader("Ready to showcase your football knowledge?")
 
     # Custom CSS for a more polished, app-like feel
     st.markdown("""
